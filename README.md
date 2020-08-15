@@ -7,6 +7,7 @@ Building damage classification from Mapillary street-view images
 
 Install needed modules with 
 ``` pip install -r requirements.txt```
+
 Get humans from Jonath or Koos
 
 ## set-up
