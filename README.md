@@ -67,7 +67,7 @@ Options:
   --help              Show this message and exit.
 ```
 3. [OPTIONAL] update `labelling_project_config.py` with chosen damage labels (features) and their importance
-4. generate batches
+4. split the images into batches
 ```
 Usage: generate_batches.py [OPTIONS]
 
