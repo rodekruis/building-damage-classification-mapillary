@@ -2,7 +2,8 @@
 Building damage classification from Mapillary street-view images
 
 ## introduction
-Some code to organize the annotation of images from Mapillary. Used for building damage classification after the Beirut explosions of 2020-08-04.
+Some scripts to organize the annotation of images from Mapillary.<br/> 
+Used for building damage classification after the Beirut explosions of 2020-08-04.
 
 Workflow:
 1. get a list of relevant images
