@@ -2,7 +2,9 @@
 Building damage classification from Mapillary street-view images
 
 ## introduction
-Some code to organize the annotation of images from Mapillary. Workflow
+Some code to organize the annotation of images from Mapillary. Used for building damage classification after the Beirut explosions of 2020-08-04.
+
+Workflow:
 1. get a list of relevant images
 2. understand how you want to label them: which building features indicate damage? (e.g. windows, walls, etc.)
 3. update the config file accordingly
@@ -12,7 +14,7 @@ Some code to organize the annotation of images from Mapillary. Workflow
 7. save one vector file per feature
 8. merge all features into one overall damage score, save it in a vector file
 
-The damage labels (features) and the corresponding questions are customizable. Default labels:
+The damage labels (or features) and the corresponding questions are customizable. Default labels:
 * `window_damage`: are the windows damaged?
 * `wall_damage`: are the walls damaged?
 * `balcony_damage`: Are the balconies damaged?
@@ -35,7 +37,7 @@ The merging of multiple features into one overall damage score follows this logi
   if any medium_feature is confirmed or any heavy_feature is possible --> moderate damage
   if any heavy_feature is confirmed --> severe damage
  ```
- where `light`, `medium` and `heavy` refer to the importance of each feature. Default options:
+ where `light`, `medium` and `heavy` refer to the importance of each feature. Default importance:
 ```
 light_features = ['other_damage', 'debris']
 medium_feature = ['window_damage', 'wall_damage', 'balcony_damage']
