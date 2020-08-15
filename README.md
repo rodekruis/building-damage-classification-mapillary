@@ -44,6 +44,7 @@ light_features = ['other_damage', 'debris']
 medium_feature = ['window_damage', 'wall_damage', 'balcony_damage']
 heavy_features = ['severe_structural_damage']
 ```
+TO BE DONE: make the merging scheme more customizable
 
 ## requirements
 1. Python 3.7
