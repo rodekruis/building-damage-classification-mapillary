@@ -77,7 +77,8 @@ Options:
   --dest TEXT           output directory (default: batches)
   --help                Show this message and exit.
 ```
-5. label the batches, get all submissions and save them as `results_batch_<batch number>_<annotator name>.json` (example: `results_batch_12_bob.json`)
+5. label the batches, get all submissions and save them as `results_batch_<batch number>_<annotator name>.json`<br\>
+(example: `results_batch_12_bob.json`)
 6. merge submissions and generate results: one vector layer per feature and one vector layer with the overall damage score 
 ```
 Usage: merge_results.py [OPTIONS]
