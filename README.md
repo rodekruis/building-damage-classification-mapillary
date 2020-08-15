@@ -66,7 +66,7 @@ Options:
   --output_file TEXT  output file (default: images/images.geojson)
   --help              Show this message and exit.
 ```
-3. update `labelling_project_config.py` with chosen damage labels (features) and their importance
+3. [OPTIONAL] update `labelling_project_config.py` with chosen damage labels (features) and their importance
 4. generate batches
 ```
 Usage: generate_batches.py [OPTIONS]
