@@ -18,7 +18,7 @@ Workflow:
 The damage labels (or features) and the corresponding questions are customizable. Default labels:
 * `window_damage`: are the windows damaged?
 * `wall_damage`: are the walls damaged?
-* `balcony_damage`: Are the balconies damaged?
+* `balcony_damage`: are the balconies damaged?
 * `severe_structural_damage`: is the building partially or entirely collapsed?
 * `other_damage`: any other damage not listed?
 * `debris`: is there debris?
