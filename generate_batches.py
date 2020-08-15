@@ -9,6 +9,7 @@ from tqdm import tqdm
 import click
 import json
 import copy
+from labelling_project_config import labelling_options
 
 
 def chunks(lst, n):
@@ -19,7 +20,7 @@ def chunks(lst, n):
 
 @click.command()
 @click.option('--batch_size', default=100, help='batch size')
-@click.option('--images', default='images/images.geojson', help='input file (images)')
+@click.option('--images', default='images/images.geojson', help='input images')
 @click.option('--dest', default='batches', help='output directory')
 def generate_batches(batch_size, images, dest):
     """
@@ -39,6 +40,8 @@ def generate_batches(batch_size, images, dest):
     img_metadata_template = data['_via_img_metadata']['image-id']
     data['_via_img_metadata'].pop('image-id')
     data['_via_attributes']['file'].pop('image_url')
+    data['_via_attributes']['file']['damage_labels']['options'] = labelling_options
+    data['_via_attributes']['file']['damage_labels']['default_options'] = {lo: False for lo in labelling_options.keys()}
 
     # split image ids (keys) into batches
     keys_batches = list(chunks(keys, batch_size))

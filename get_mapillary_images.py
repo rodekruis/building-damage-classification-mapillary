@@ -12,9 +12,8 @@ client = '<client-id>'
 access_token = '<access-token>'
 
 @click.command()
-@click.option('--start_time', default='', help='filter by date; e.g. 2020-08-04')
-@click.option('--bbox', default='', help='filter by bounding box with format long_start,lat_start,long_end,lat_end;'
-                                         ' e.g. 35.492308,33.883913,35.547162,33.918119')
+@click.option('--start_time', default='', help='filter by date')
+@click.option('--bbox', default='', help='filter by bounding box with format long_start,lat_start,long_end,lat_end')
 @click.option('--output_file', default='images/images.geojson', help='output file')
 def get_mapillary_images(start_time, bbox, output_file):
     """
