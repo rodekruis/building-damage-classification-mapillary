@@ -26,9 +26,9 @@ The damage labels (or features) and the corresponding questions are customizable
 The merging of multiple submissions from different annotators follows this logic, in pseudo-code
 ``` 
 for each image and feature:
-  if no annotator mentions it --> no damage
-  if any annotator mentions it --> possible damage
-  if all annotators mention it --> confirmed damage
+  if no annotator mentions it --> no fearure damage
+  if any annotator mentions it --> possible feature damage
+  if all annotators mention it --> confirmed feature damage
 ```
 The merging of multiple features into one overall damage score follows this logic, in pseudo-code
 ```
