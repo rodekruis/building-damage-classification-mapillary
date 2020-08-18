@@ -47,13 +47,11 @@ heavy_features = ['severe_structural_damage']
 TO BE DONE: make the merging scheme more customizable
 
 ## requirements
-1. Python 3.7
+1. Python >= 3.7
 2. many humans
 
 Install needed modules with 
 ``` pip install -r requirements.txt```
-
-Get humans
 
 ## usage
 1. get client and access token for Mapillary API from Bitwarden, add them in ```get_mapillary_images.py```
